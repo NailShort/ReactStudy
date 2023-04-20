@@ -7,6 +7,9 @@ import Test01 from './Test01';
 import Test02 from './Test02';
 import Test03 from './Test03';
 import Test04 from './Test04';
+import Test05 from './Test05';
+import Test06 from './Test06';
+import Test07 from './Test07';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -30,6 +33,10 @@ root.render(
     <Test02 name={name} handleClick={changeName}></Test02>
     <Test03></Test03>
     <Test04></Test04>
+    <Test05></Test05>
+    <Test06 dad='Chang'></Test06>
+    <Test07/>
+    <div id='talk'></div>
   </React.StrictMode>
 );
 
