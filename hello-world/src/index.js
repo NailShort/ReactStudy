@@ -5,9 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const printMessage=()=>{
+  document.getElementById('show-area').innerHTML="我被按到了";
+}
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App name="我的名子" handleClick={printMessage} />
+    <div id='show-area'></div>
   </React.StrictMode>
 );
 
